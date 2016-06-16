@@ -128,7 +128,7 @@
 			},
 			setField: function (es) {
 				if (!$(this).is('li:visible')) return false;
-				input.val($(this).text());
+				input.val($(this).text()).change();
 				es.hide();
 				if (options.onSelect) options.onSelect.call(input, $(this));
 			}
